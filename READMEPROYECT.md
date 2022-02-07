@@ -24,6 +24,13 @@ Los principales objetivos de los usuarios con el producto son:
     * Ver cuantos atletas de cada género participaron y cuantos ganaron medalla porque les gustaría identificar si hay igualdad de género en cuanto a la participación de mujeres. 
 - ¿Cuándo utilizan o utilizarían el producto?
   Este producto lo utilizarían cuando vuelvan a haber otros Juegos Olímpicos para comparar el rendimiento de los deportistas cada año, para motivar a los atletas a mejorar las marcas de estos Juegos Olímpicos, por cultura general (que país ganó mas medallas, que disciplinas participaron, cuantos atletas participaron), por ver que atletas nuevos hay, por diversión y curiosidad. 
-- Historias de Usiario
+- Historias de Usuario:
   De acuerdo a nuestra investigación determinamos las siguientes historias de usuario:
   ![historias de usuario](HU.png)
+- Criterios de aceptación:
+    * Historia de usuario 1: 
+    * * El usuario puede acceder a las características de cada deportista (Peso, altura, país, deporte que practica) por medio de un ícono que al hacer click y ver toda la información en una tabla.
+    * * Tener un filtro para que el usuario pueda ver los atletas que participaron por país.
+    * Historia de usuario 2:
+    * * El usuario puede acceder a los países que participaron por medio de un ícono que al hacer click y ver toda la información en una tabla.
+    * * Tener un filtro que permita al usuario clasificar los países por continente.
