@@ -28,23 +28,23 @@ Los principales objetivos de los usuarios con el producto son:
   De acuerdo a nuestra investigación determinamos las siguientes historias de usuario:
   ![historias de usuario](HU1.png)
 ## Criterios de aceptación:
-    * Historia de usuario 1: 
+  * Historia de usuario 1: 
       * El usuario puede acceder a las características de cada deportista (Peso, altura, país, deporte que practica) por medio de un ícono que al hacer click y ver toda la información en una tabla.
       * Tener un filtro para que el usuario pueda ver los atletas que participaron por país.
-    * Historia de usuario 2:
+  * Historia de usuario 2:
       * El usuario puede acceder a los países que participaron por medio de un ícono que al hacer click y ver toda la información en una tabla.
       * Tener un filtro que permita al usuario clasificar los países por continente.
-    * Historia de usuario 3:
+  * Historia de usuario 3:
       * El usuario puede acceder a la cantidad de atletas que participaron los Juegos Olímpicos de Río por medio de un ícono.
       * Tener un filtro para saber cuantos atletas participaron por país y cuales fueron.
-    * Historia de usuario 4:
+  * Historia de usuario 4:
       * El usuario puede acceder a los deportes principales que participaron los Juegos Olímpicos de Río por medio de un ícono.
       * Cuando el usuario haga click en cada ícono que corresponderá a cada deporte que le interese, pueda ver las disciplinas por cada deporte.
       * El usuario podrá acceder a cada disciplina y ver que atletas han ganado mas medallas.
       * Que el usuario pueda dar click en un ícono que lo devuelva a la página donde se ven todos los deportes principales.
-    * Historia de usuario 5:
+  * Historia de usuario 5:
       * El usuario puede escoger si quiere ver los equipos o atletas individuales por medio de un filtro.
       * El usuario pueda ver la información de acuerdo a su preferencia.
-    * Historia de usuario 6:
+  * Historia de usuario 6:
       * El usuario puede acceder a la cantidad de atletas que participaron en los Juegos Olimpicos de Río por medio de un ícono. 
       * El usuario podrá escoger que género le gustaría ver y podrá acceder a una tabla para ver la cantidad de medallas que los deportistas han ganado de forma descendente. 
