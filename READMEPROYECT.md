@@ -1,7 +1,7 @@
 # Readme del proyecto Data Lovers
-## Por Nataly Escobar, Camila Cortés
+Por Nataly Escobar, Camila Cortés
 ___
-### Definición del producto en base al conocimiento del usuario:
+## Definición del producto en base al conocimiento del usuario:
 - ¿Quiénes son los principales usuarios de producto?
 Se identificó dos tipos de usuarios que podrían hacer uso de la página:
     * Aficionados a los Juegos Olimpicos.
