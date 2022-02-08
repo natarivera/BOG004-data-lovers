@@ -50,14 +50,75 @@ Los principales objetivos de los usuarios con el producto son:
       * El usuario puede acceder a la cantidad de atletas que participaron en los Juegos Olimpicos de Río por medio de un ícono. 
       * El usuario podrá escoger que género le gustaría ver y podrá acceder a una tabla para ver la cantidad de medallas que los deportistas han ganado de forma descendente. 
 
+> Notamos que las historias de usuario 1, 3, 5 y 6 pueden combinarse para hacer un criterio de aceptación mas reducido.
+
+## Nuevos criterios de aceptación
+  * Historia de usuario 1, 3, 5,y 6: 
+    * El usuario puede acceder a las características de cada deportista (Peso, altura, país, deporte que practica) por medio de un ícono que al hacer pueda ver toda la información en una tabla.
+    * Encima de la tabla el usuario podrá ver cuantos deportistas participaron en los Juegos Olímpicos y a medida que los vaya aplicando los filtros, esta cantidad puede cambiar. 
+    * Tener un filtro para que el usuario pueda ver los atletas que participaron por país.
+    * El usuario puede escoger si quiere ver los equipos o atletas individuales por medio de un filtro.
+    * El usuario podrá escoger que género le gustaría ver
+    * El usuario podrá acceder a una tabla para ver la cantidad de medallas que los deportistas han ganado de forma descendente dependiendo de los filtros colocados por el usuario.
+  * Historia de usuario 2:
+      * El usuario puede acceder a los países que participaron por medio de un ícono que al hacer click y ver toda la información en una tabla.
+      * Tener un filtro que permita al usuario clasificar los países por continente.  
+  * Historia de usuario 4:
+      * El usuario puede acceder a los deportes principales que participaron los Juegos Olímpicos de Río por medio de un ícono.
+      * Cuando el usuario haga click en cada ícono que corresponderá a cada deporte que le interese, pueda ver las disciplinas por cada deporte.
+      * El usuario podrá acceder a cada disciplina y ver que atletas han ganado mas medallas.
+      * Que el usuario pueda dar click en un ícono que lo devuelva a la página donde se ven todos los deportes principales. 
+
+## Definición de terminado
+  * Historia de usuario 1, 3, 5,y 6:
+    * Está la estructura HTML 
+    * Cumple con las guías de diseño aprobadas (CSS).
+    * El código está en el repositorio de ambas.
+    * Se realizaron los test para las funcionalidades.
+    * El código aprueba los test.
+    * Hemos trabajado juntas en el código y lo conocemos perfectamente.
+    * Ambas cumplimos con los objetivos de aprendizaje.
+    * Recibimos feedback de parte de los usuarios para saber en que debemos mejorar. 
+    * Mostrar funcionando la tarea.
+  * Historia de usuario 2:
+    * Está la estructura HTML 
+    * Cumple con las guías de diseño aprobadas (CSS).
+    * El código está en el repositorio de ambas.
+    * Se realizaron los test para las funcionalidades.
+    * El código aprueba los test.
+    * Hemos trabajado juntas en el código y lo conocemos perfectamente.
+    * Ambas cumplimos con los objetivos de aprendizaje.
+    * Recibimos feedback de parte de los usuarios para saber en que debemos mejorar. 
+    * Mostrar funcionando la tarea.
+  * Historia de usuario 4:
+    * Está la estructura HTML 
+    * Cumple con las guías de diseño aprobadas (CSS).
+    * El código está en el repositorio de ambas.
+    * Se realizaron los test para las funcionalidades.
+    * El código aprueba los test.
+    * Hemos trabajado juntas en el código y lo conocemos perfectamente.
+    * Ambas cumplimos con los objetivos de aprendizaje.
+    * Recibimos feedback de parte de los usuarios para saber en que debemos mejorar. 
+    * Mostrar funcionando la tarea.
+
 ## Proceso de diseño
 
-Se mostró a los usuarios el primer prototipo de la página principal el cual se mostrará a continuación:
+Algo que no tuvimos en cuenta a la hora de hacer las historias de usuario fue preguntar si les gustaría tener un contexto o información en general de los Juegos Olímpicos de Río como cual fue la mascota representativa, en que días se realizó y cuantos eventos deportivos tuvo. Volvimos a preguntarles y ellos dijeron que estaban de acuerdo ya que muchas personas querian saber esta información antes de ver que deportistas participaron. 
+
+A continuación se mostrarán los prototipos de las páginas que contendrán los criterios:
+
+ * Página principal:
+
   ![prototipo 1](PROTOTIPO1.png)
+
+ * Información sobre atletas: 
+ 
+  ![prototipo 2](PROTOTIPO1-2.png)  
+
+ * Información sobre países participantes: 
+ 
+  ![prototipo 2](PROTOTIPO1-3.png)  
+ 
+ * Deportes participantes:
   
-Les comentamos que nos gustaría incluir un poco de información general sobre los Juegos Olímpicos de Río de Janeiro y ellos estuvieron de acuerdo, ya que especialmente los usuarios que quieren adentrarse en el mundo de los deportes necesitan y contexto.
-Tambien nos sugirieron mezclar algunas funcionalidades ya que estabamos siendo redundantes al mostrar diferentes funcionalidades para visualizar a los atletas. Por lo que nos dijeron que podiamos poner en un solo botón todo lo relacionado a este ítem. 
-
-A continuación se muestra el resultado del prototipo 2 para el menú principal:
-  ![prototipo 2](PROTOTIPO2.png)  
-
+  ![prototipo 2](PROTOTIPO1-4.png) 
