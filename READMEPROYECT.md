@@ -54,7 +54,8 @@ Los principales objetivos de los usuarios con el producto son:
 
 Se mostró a los usuarios el primer prototipo de la página principal el cual se mostrará a continuación:
   ![prototipo 1](PROTOTIPO1.png)
-Le comentamos que nos gustaría incluir un poco de información general sobre los Juegos Olímpicos de Río de Janeiro y ellos estuvieron de acuerdo, ya que especialmente los usuarios que quieren adentrarse en el mundo de los deportes necesitan y contexto.
+  
+Les comentamos que nos gustaría incluir un poco de información general sobre los Juegos Olímpicos de Río de Janeiro y ellos estuvieron de acuerdo, ya que especialmente los usuarios que quieren adentrarse en el mundo de los deportes necesitan y contexto.
 Tambien nos sugirieron mezclar algunas funcionalidades ya que estabamos siendo redundantes al mostrar diferentes funcionalidades para visualizar a los atletas. Por lo que nos dijeron que podiamos poner en un solo botón todo lo relacionado a este ítem. 
 
 A continuación se muestra el resultado del prototipo 2 para el menú principal:
