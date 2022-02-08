@@ -108,6 +108,7 @@ Algo que no tuvimos en cuenta a la hora de hacer las historias de usuario fue pr
 A continuación se mostrarán los prototipos de las páginas que contendrán los criterios:
 
  * Página principal:
+
   ![prototipo 1](PROTOTIPO1.png)
 
  * Información sobre atletas: 
