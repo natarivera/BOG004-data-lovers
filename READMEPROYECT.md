@@ -25,6 +25,7 @@ Los principales objetivos de los usuarios con el producto son:
 - ¿Cuándo utilizan o utilizarían el producto?
   Este producto lo utilizarían cuando vuelvan a haber otros Juegos Olímpicos para comparar el rendimiento de los deportistas cada año, para motivar a los atletas a mejorar las marcas de estos Juegos Olímpicos, por cultura general (que país ganó mas medallas, que disciplinas participaron, cuantos atletas participaron), por ver que atletas nuevos hay, por diversión y curiosidad. 
 ## Historias de Usuario:
+  
   De acuerdo a nuestra investigación determinamos las siguientes historias de usuario:
   ![historias de usuario](HU1.png)
 ## Criterios de aceptación:
@@ -48,3 +49,14 @@ Los principales objetivos de los usuarios con el producto son:
   * Historia de usuario 6:
       * El usuario puede acceder a la cantidad de atletas que participaron en los Juegos Olimpicos de Río por medio de un ícono. 
       * El usuario podrá escoger que género le gustaría ver y podrá acceder a una tabla para ver la cantidad de medallas que los deportistas han ganado de forma descendente. 
+
+## Proceso de diseño
+
+Se mostró a los usuarios el primer prototipo de la página principal el cual se mostrará a continuación:
+  ![prototipo 1](PROTOTIPO1.png)
+Le comentamos que nos gustaría incluir un poco de información general sobre los Juegos Olímpicos de Río de Janeiro y ellos estuvieron de acuerdo, ya que especialmente los usuarios que quieren adentrarse en el mundo de los deportes necesitan y contexto.
+Tambien nos sugirieron mezclar algunas funcionalidades ya que estabamos siendo redundantes al mostrar diferentes funcionalidades para visualizar a los atletas. Por lo que nos dijeron que podiamos poner en un solo botón todo lo relacionado a este ítem. 
+
+A continuación se muestra el resultado del prototipo 2 para el menú principal:
+  ![prototipo 2](PROTOTIPO2.png)  
+
