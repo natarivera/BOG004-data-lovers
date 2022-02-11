@@ -1,0 +1,70 @@
+body {
+    background-image: url("../Imagenes para DataLovers/background.png"); /*Se coloca */
+    background-size: 100%;
+}
+
+header{
+    text-align: center;    /*Centra el texto 'Juegos olimpicos' de acuerdo a la caja contenedora header*/
+    border-style: solid;   
+    padding: 3%;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: none;  /*Para que no se vea tanto espacio entre cajones*/
+}
+
+
+.principal {
+    border: 2px solid;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 1%;
+    padding: 1%;
+    height: 500px;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: flex-start;
+}
+
+ul {
+    list-style: none;
+}
+
+.articles {
+    border: 2px solid;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.menu {
+    border: 2px solid;
+    width: 80%;
+    height: 150px;
+    text-align: center;
+    
+}
+
+.location {
+    border: 2px solid;
+    width: 80%;
+    height: 150px;
+    text-align: center;
+}
+
+.information {
+    border: 2px solid;
+    width: 70%;
+}
+
+
+footer{
+    box-sizing: content-box;
+    text-align: center;
+    border: 2px solid;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 1%;;
+}
