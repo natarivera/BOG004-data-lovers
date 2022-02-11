@@ -47,6 +47,10 @@ ul {
     
 }
 
+.pointer{
+    cursor:pointer;
+}
+
 .location {
     border: 2px solid;
     width: 80%;
@@ -57,6 +61,11 @@ ul {
 .information {
     border: 2px solid;
     width: 70%;
+
+}
+
+.atlethes {
+    display: none;
 }
 
 
