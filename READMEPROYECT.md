@@ -122,3 +122,4 @@ A continuación se mostrarán los prototipos de las páginas que contendrán los
  * Deportes participantes:
   
   ![prototipo 2](PROTOTIPO1-4.png) 
+
