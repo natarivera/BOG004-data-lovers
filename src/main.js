@@ -5,6 +5,7 @@ import data from './data/athletes/athletes.js';
 
 console.log(example, data);
 
+
 var athletes = data.athletes;
 
 const rootElement  = document.getElementById("tabla_atletas");// Trayendo el elemento tabla_atletas (html)
