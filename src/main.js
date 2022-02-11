@@ -3,6 +3,22 @@ import { example } from './data.js';
 import data from './data/athletes/athletes.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
+// Evento para hacer click en el link y que nos lleve a la tabla.
+let firstLink = document.getElementById("atlethesLink");   
+firstLink.addEventListener("click", firstHide)
+
+// Funcion para ocultar la introducción y mostrar la tabla
+function firstHide(){
+    let secondMain = document.getElementById("secondPage");
+    secondMain.style.display='block';
+    let  firstMain= document.getElementById("firstPage");
+    firstMain.style.display = 'none';  
+}
+
+
+
+
+
 console.log(example, data);
 
 
@@ -36,3 +52,4 @@ data.athletes.forEach(// Recorriendo el arreglo athletes
     }
     
 );
+
