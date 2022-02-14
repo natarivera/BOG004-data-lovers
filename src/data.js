@@ -1,9 +1,9 @@
+import data from './data/athletes/athletes.js';
+
 // estas funciones son de ejemplo
 
-export const example = () => {
-  return 'example';
+export const getCountry = (country) => {data.filter((athlete) => athlete.team === country);
+  return 'getCountry';
 };
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+

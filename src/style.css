@@ -30,6 +30,8 @@ ul {
     list-style: none;
 }
 
+
+
 .articles {
     border: 2px solid;
     width: 30%;
@@ -68,6 +70,13 @@ ul {
     display: none;
 }
 
+.participatingCountries{
+    display: none;
+}
+
+.sports {
+    display: none;
+}
 
 footer{
     box-sizing: content-box;

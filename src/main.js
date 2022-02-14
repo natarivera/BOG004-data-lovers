@@ -1,4 +1,4 @@
-import { example } from './data.js';
+import { getCountry } from './data.js';
 // import data from './data/lol/lol.js';
 import data from './data/athletes/athletes.js';
 // import data from './data/rickandmorty/rickandmorty.js';
@@ -14,9 +14,6 @@ function firstHide(){
     let  firstMain= document.getElementById("firstPage");
     firstMain.style.display = 'none';  
 }
-
-
-
 
 
 console.log(example, data);
