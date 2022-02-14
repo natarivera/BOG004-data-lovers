@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scales=1.0">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./Imagenes para DataLovers/olimpicos - copia.ico">
   </head>
   <body>
     <div id="root"></div>
@@ -17,11 +18,11 @@
       <section class="principal">
         <div class="articles">
           <article class="menu">
-            <p>Menu</p>
+            <a href="#" class="pointer" id="menuLink">Menu</a>
             <ul>
-              <li><a class="pointer" id="atlethesLink">Atletas participantes</a></li>
-              <li><a href="">Países participantes</a></li>
-              <li><a href="">Deportes participantes</a></li>
+              <li><a href="#" class="pointer" id="atlethesLink">Atletas participantes</a></li>
+              <li><a href="#" class="pointer" id="countriesLink">Países participantes</a></li>
+              <li><a href="#" class="pointer" id="sportsLink">Deportes participantes</a></li>
             </ul>
               </article>
             <article class="location">
@@ -43,14 +44,23 @@
           </p>
         </main>
         <main class="atlethes" id="secondPage">
-          <table id="tabla_atletas"style="width:50%">
+          <div class="dropdown">
+            <button type="button" class="Openbtn">País</button>
+            <table id="tableCountries"style="width:50%"></table>
             <tr>
-              <th>Atleta</th>
-              <th>País</th>
-              <th>COI</th>
-              <th>Deporte</th>
+              Hola
             </tr>
+          </div>
+          
+          <table id="tabla_atletas"style="width:50%">
+            
           </table>
+        </main>
+        <main class="participatingCountries" id="thirdPage">
+          <p>COmo</p>
+        </main>
+        <main class="sports" id="fourthPage">
+          <p>Estas?</p>
         </main>
       </section>
       <footer class="foot">
