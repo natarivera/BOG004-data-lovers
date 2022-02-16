@@ -5,3 +5,4 @@ import data from './data/athletes/athletes.js';
 export const getCountry = (country) => {data.filter((item) => item.team === country);
   return 'getCountry';
 };
+//GIT 
