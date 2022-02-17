@@ -24,7 +24,23 @@ function paintCountriesIntoSelect () {
     let  firstMain= document.getElementById("firstPage");
     firstMain.style.display = 'none'; 
 
-
+    var countries = data.athletes.map(athlete=>athlete.team);
+    // Ordena el arreglo de paises alfabeticamente
+    countries.sort(
+        (a,b)=> {
+            if(a > b){
+                return 1;
+            }else if (a === b){
+                return 0;
+            }else {
+                return -1;
+            }
+        }
+    );
+    //Convierto el arreglo en un Set, un set es una estructura donde los elementos no se repiten
+    var orderedContries = new Set(countries);
+    
+    console.table(orderedContries);
 
     //pinta en el select
     data.athletes.forEach(                                            // Recorriendo el arreglo athletes
@@ -46,41 +62,33 @@ filterCountry.addEventListener("change", function(evento){
    getCountry(athletesData, countrySelected)
 });
 
-//Creando los nodos del encabezado de la tabla de atletas
+var firstTable = document.getElementById('tbAthletes');
 
-let rowHeadAthletes = document.createElement('tr');
-let headNameAthletes = document.createElement('th');
-headNameAthletes.innerHTML = "Nombre";
-let headGenderAthletes = document.createElement('th');
-headGenderAthletes.innerHTML = "Género";
-let headHeightAthletes = document.createElement('th');
-headHeightAthletes.innerHTML = "Altura (cm)";
-let headWeightAthletes = document.createElement('th');
-headWeightAthletes.innerHTML = "Peso (kg)";
-let headSportAthletes = document.createElement('th');
-headSportAthletes.innerHTML = "Deporte";
-let headNocAthletes = document.createElement('th');
-headNocAthletes.innerHTML = "COI";
-let headAgeAthletes = document.createElement('th');
-headAgeAthletes.innerHTML = "Edad";
-let headEventAthletes = document.createElement('th');
-headEventAthletes.innerHTML = "Evento deportivo";
-let headMedalAthletes = document.createElement('th');
-headMedalAthletes.innerHTML = "Medallas";
+//Aqui vamos a guardar los tr y td con su informacion.
+let countriestable = ``
 
-//Creando los hijos de los nodos
+//Recoremos las peliculas
+//El operador in es para obtener el indice, 
+//en cambio of es el objeto en si.
 
-rowHeadAthletes.appendChild(headNameAthletes);
-rowHeadAthletes.appendChild(headGenderAthletes);
-rowHeadAthletes.appendChild(headHeightAthletes);
-rowHeadAthletes.appendChild(headWeightAthletes);
-rowHeadAthletes.appendChild(headSportAthletes);
-rowHeadAthletes.appendChild(headNocAthletes);
-rowHeadAthletes.appendChild(headAgeAthletes);
-rowHeadAthletes.appendChild(headEventAthletes);
-rowHeadAthletes.appendChild(headMedalAthletes);
-
-let rowAthletes = document.getElementById("thAthletes");
-rowAthletes.appendChild(rowHeadAthletes);
-
-
+for (const item of athletesData) {
+  //Fijate que utilizamos += para acumular los datos. 
+  //Template strings syntax
+  countriestable += `
+    <tr>
+      <td>${item.name}</td>
+      <td>${item.gender}</td>
+      <td>${item.height}</td>
+      <td>${item.weight}</td>
+      <td>${item.sport}</td>
+      <td>${item.team}</td>
+      <td>${item.noc}</td>
+      <td>${item.age}</td>
+      <td>${item.event}</td>
+      <td>${item.medal}</td>
+    </td>
+  
+  `
+}
+//Finalmente añadimos el contenido a la tabla
+firstTable.innerHTML += countriestable
