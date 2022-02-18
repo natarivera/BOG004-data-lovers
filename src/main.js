@@ -1,80 +1,23 @@
-import { getCountry } from './data.js';
-import athletes from './data/athletes/athletes.js';
-// import data from './data/lol/lol.js';
-import data from './data/athletes/athletes.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+//import { getCountry } from './data.js';
+
+import { getByCountry } from "./data.js";
+import data from "./data/athletes/athletes.js";
 
 const athletesData = data.athletes;
 
-// Evento para hacer click en el link y que nos lleve a la tabla.
-let firstLink = document.getElementById("atlethesLink");   
-firstLink.addEventListener("click", paintCountriesIntoSelect);
-
-// Funcion 
-// function firstHide(){
-    
-// }
-
-//Se creo un select con los nombres de los países para que sirva como filtro
-// Falta eliminar los países repetidos y ordenarlos alfabéticamente.
-function paintCountriesIntoSelect () {
-    // para ocultar la introducción y mostrar la tabla
-    let secondMain = document.getElementById("secondPage");
-    secondMain.style.display='block';
-    let  firstMain= document.getElementById("firstPage");
-    firstMain.style.display = 'none'; 
-
-    var countries = data.athletes.map(athlete=>athlete.team);
-    // Ordena el arreglo de paises alfabeticamente
-    countries.sort(
-        (a,b)=> {
-            if(a > b){
-                return 1;
-            }else if (a === b){
-                return 0;
-            }else {
-                return -1;
-            }
-        }
-    );
-    //Convierto el arreglo en un Set, un set es una estructura donde los elementos no se repiten
-    var orderedContries = new Set(countries);
-    
-    console.table(orderedContries);
-
-    //pinta en el select
-    data.athletes.forEach(                                            // Recorriendo el arreglo athletes
-        (athlete)=>{   
-
-            let optionCountry = document.createElement("option");   // Creando un hijo  
-            optionCountry.value = athlete.team;
-            optionCountry.innerHTML = athlete.team;
-            filterCountry.appendChild(optionCountry);
-        }
-    );
-}
-
-const filterCountry = document.getElementById("selectCountries");  // Trayendo el elemento tabla_atletas (html)
+//Obteniendo elementos del DOM
+const firstTable = document.getElementById("tbAthletes");
+const athletesTableLink = document.getElementById("atlethesLink");
+const informationDisplay = document.getElementById("firstPage");
+const athletesTableDisplay = document.getElementById("secondPage");
+const countriesSelect = document.getElementById("selectCountries");
 
 
-filterCountry.addEventListener("change", function(evento){
-   let countrySelected = evento.target.value;
-   getCountry(athletesData, countrySelected)
-});
+function paintTable(data) {
+  let athletesInformation = ``;
 
-var firstTable = document.getElementById('tbAthletes');
-
-//Aqui vamos a guardar los tr y td con su informacion.
-let countriestable = ``
-
-//Recoremos las peliculas
-//El operador in es para obtener el indice, 
-//en cambio of es el objeto en si.
-
-for (const item of athletesData) {
-  //Fijate que utilizamos += para acumular los datos. 
-  //Template strings syntax
-  countriestable += `
+  for (const item of data) {
+    athletesInformation += `
     <tr>
       <td>${item.name}</td>
       <td>${item.gender}</td>
@@ -86,9 +29,42 @@ for (const item of athletesData) {
       <td>${item.age}</td>
       <td>${item.event}</td>
       <td>${item.medal}</td>
-    </td>
-  
-  `
+    </tr>
+  `;
+  }
+
+  firstTable.innerHTML += athletesInformation;
 }
-//Finalmente añadimos el contenido a la tabla
-firstTable.innerHTML += countriestable
+
+//Pintar países en el select
+
+function paintCountries(data) {
+  let dataTeam = data.map((ele) => ele.team);
+  let sortData = Array.from(new Set(dataTeam.sort()));
+  let countriesSelectOption = ``;
+  for (const item of sortData) {
+    countriesSelectOption += `
+        <option class="option-country" value="${item}">${item}</option>
+
+    `;
+  }
+
+  countriesSelect.innerHTML += countriesSelectOption;
+}
+
+//Eventos del DOM
+athletesTableLink.addEventListener("click", () => {
+  paintTable(athletesData);
+  paintCountries(athletesData);
+  informationDisplay.style.display = "none";
+  athletesTableDisplay.style.display = "block";
+});
+
+countriesSelect.addEventListener('change', (e)=> {
+    const country = e.target.value
+    const dataFilteredByCountry = getByCountry(athletesData, country)
+    paintTable(dataFilteredByCountry)
+
+
+})
+
