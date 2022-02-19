@@ -21,7 +21,6 @@
             <a href="#" class="pointer" id="menuLink">Menu</a>
             <ul>
               <li><a href="#" class="pointer" id="atlethesLink">Atletas participantes</a></li>
-              <li><a href="#" class="pointer" id="countriesLink">Países participantes</a></li>
               <li><a href="#" class="pointer" id="sportsLink">Deportes participantes</a></li>
             </ul>
               </article>
@@ -44,9 +43,15 @@
           </p>
         </main>
         <main class="atlethes" id="secondPage">
-          <select id="selectCountries"style="width:50%">  
-            <option class="option-country"value="">--País--</option>
+          <select id="selectCountries" style="width:20%">  
+            <option class="option-country" value="País">--País--</option>
           </select>
+          <select id="selectGender" style="width:20%">
+            <option class="option-gender" value="Género">--Género--</option>
+          </select>
+          <div>
+            <p>Total atletas <span id="atletheCount"></span></p>
+          </div>
         <table id="tableAthletes">
           <thead id="thAthletes">
             <tr>
