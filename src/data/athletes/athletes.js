@@ -6137,7 +6137,7 @@ export default {
       "medal": "Bronze"
     },
     {
-      "name": "scar Albeyro Figueroa Mosquera",
+      "name": "Oscar Albeyro Figueroa Mosquera",
       "gender": "M",
       "height": "159",
       "weight": "62",
@@ -15809,7 +15809,7 @@ export default {
       "medal": "Bronze"
     },
     {
-      "name": "Mariana Pajn Londoo",
+      "name": "Mariana Pajón Londoño",
       "gender": "F",
       "height": "158",
       "weight": "50",
