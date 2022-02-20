@@ -1,9 +1,10 @@
 //import { getCountry } from './data.js';
 
-import { getByCountry, getByGender } from "./data.js";
+import { getByCountry, getByGender,} from "./data.js";
 import data from "./data/athletes/athletes.js";
 
 const athletesData = data.athletes;
+
 
 //Obteniendo elementos del DOM
 const firstTable = document.getElementById("tbAthletes");
@@ -43,11 +44,10 @@ function paintTable(data) {
 function paintCountries(data) {
   let dataTeam = data.map((ele) => ele.team);
   let sortData = Array.from(new Set(dataTeam.sort()));
-  let countriesSelectOption = ``;
+  let countriesSelectOption = `<option class="option-gender" value="_all">Países</option>`;
   for (const item of sortData) {
     countriesSelectOption += `
         <option class="option-country" value="${item}">${item}</option>
-
     `;
   }
 
@@ -59,7 +59,7 @@ function paintCountries(data) {
 function paintGender(data) {
   let dataGender = data.map((ele) => ele.gender);
   let setDataGender = Array.from(new Set(dataGender));
-  let gendersSelectOption = ``;
+  let gendersSelectOption = `<option class="option-gender" value="_all">Género</option>`;
 
   for (const item of setDataGender) {
     gendersSelectOption += `
@@ -83,17 +83,29 @@ athletesTableLink.addEventListener("click", () => {
 
 // Captura el país que el usuario escoje y muestra la tabla filtrada
 
+let selectedCountry = undefined;
 countriesSelect.addEventListener("change", (e) => {
-  const country = e.target.value;
-  const dataFilteredByCountry = getByCountry(athletesData, country);
-  paintTable(dataFilteredByCountry,);
+  selectedCountry = e.target.value;
+  paintTable(filterData(athletesData, selectedCountry, selectedGender));
 
 });
 
 // Captura el género que el usuario escoje y muestra la tabla filtrada
+let selectedGender = undefined;
 genderSelect.addEventListener("change", (e) => {
-  const gender = e.target.value;
-  const dataFilteredByGender = getByGender(athletesData, gender);
-  paintTable(dataFilteredByGender);
+  selectedGender = e.target.value;
+  paintTable(filterData(athletesData, selectedCountry, selectedGender));
 });
 
+//Inicializa la tabla si el usuario escoje la opción 'países' o la opción 'género' 
+//de lo contrario debe filtrar los datos de acuerdo a las especificaciones del usuario.
+
+function filterData(data, country, gender) {
+  if (country && country !== "_all") {
+    data = getByCountry(data, country);
+  }
+  if (gender && gender !== "_all") {
+    data = getByGender(data, gender);
+  }
+  return data
+}
