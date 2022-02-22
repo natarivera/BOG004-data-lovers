@@ -1,26 +1,32 @@
 body {
     background-image: url("../Imagenes para DataLovers/background.png") !important; /*Se coloca */
     background-size: 100%;
+    font-family: "Segoe UI", Arial, sans-serif;
 }
 
 header{
-    text-align: center;    /*Centra el texto 'Juegos olimpicos' de acuerdo a la caja contenedora header*/
-    border-style: solid;   
-    padding: 3%;
+    text-align: center;    /*Centra el texto 'Juegos olimpicos' de acuerdo a la caja contenedora header*/    
     margin-top: 2%;
     margin-left: 2%;
     margin-right: 2%;
     margin-bottom: none;  /*Para que no se vea tanto espacio entre cajones*/
+    font-family: 'Agency FB Bold', arial;
+    font-size: xx-large;
+    background-color: rgba(150,150,150,0.6);
 }
 
+#headerrImg{
+    position: relative;
+    margin-top: -50px;    
+    width: 250px;
+}
 
 .principal {
-    border: 2px solid;
     margin-left: 2%;
     margin-right: 2%;
     margin-top: 1%;
     padding: 1%;
-    height: 500px;
+    height: 450px;
     box-sizing: content-box;
     display: flex;
     justify-content: flex-start;
@@ -33,8 +39,7 @@ ul {
 
 
 .articles {
-    border: 2px solid;
-    width: 30%;
+    width: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,11 +47,12 @@ ul {
 
 
 .menu {
-    border: 2px solid;
     width: 80%;
     height: 150px;
-    text-align: center;
-    
+    text-align:center;
+    background-color: rgba(150,150,150,0.6);
+    margin: 10px;
+    margin-right: 100px;
 }
 
 .pointer{
@@ -54,20 +60,25 @@ ul {
 }
 
 .location {
-    border: 2px solid;
     width: 80%;
-    height: 150px;
+    height: 250px;
     text-align: center;
+    font-size:large;
+    background-color: rgba(150,150,150,0.6);
+    margin-right: 100px;
+
 }
 
 .information {
-    border: 2px solid;
     width: 70%;
-
+    background-color: rgba(150,150,150,0.6);
+    text-align: left;
+    
 }
 
 .atlethes {
     display: none;
+    width: 70%;    
 }
 
 .participatingCountries{
@@ -80,12 +91,99 @@ ul {
 
 footer{
     box-sizing: content-box;
-    text-align: center;
-    border: 2px solid;
+    text-align: center;    
     margin-left: 2%;
     margin-right: 2%;
-    margin-top: 1%;;
+    margin-top: 1%;;  
+    padding: 4px;                  
+    background-color: rgba(150,150,150,0.6);    
+    font-size: larger;
+}
+
+#footerImg{
+    position: absolute;
+    bottom: 0;
+    width: 98%;
+    z-index: -1;
+}
+
+#brasilImg{
+    width: 120px;
+    height: auto;
+    float:left;
+    margin-left: 60px;
+}
+
+#rioImg{
+    width: 110px;
+    height: auto;
+    float:right;
+    margin-right: 60px;
+    
+}
+
+#firstPage > p {
+    font-size: 22px;
+    padding: 30px;
+    text-align: justify;
+}
+
+.mascotaImg{    
+    float: right;    
 }
 
 
 
+
+html {
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+  }
+  
+  table {            
+      height: 400px;      
+      overflow: scroll;
+      display: block;
+  }
+
+  thead th, tfoot th {
+    font-family: 'Rock Salt', cursive;
+  }
+  
+  th {
+    letter-spacing: 2px;
+  }
+  
+  td {
+    letter-spacing: 1px;
+  }
+  
+  tbody td {
+    text-align: center;
+  }
+  
+  tfoot th {
+    text-align: right;
+  }
+
+  thead, tfoot {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+  }
+  
+  thead th, tfoot th, tfoot td {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+    border: 3px solid gray;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color:rgb(194, 190, 190);
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: rgb(255, 255, 255)
+    
+  }
+    
+  table {
+    background-color: #b1b1b1;
+  }
