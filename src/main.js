@@ -23,13 +23,13 @@ function paintTable(data) {
     <tr>
       <td>${item.name}</td>
       <td>${item.gender}</td>
-      <td>${item.height}</td>
-      <td>${item.weight}</td>
-      <td>${item.sport}</td>
+      <td class="bigsscreen">${item.height}</td>
+      <td class="bigsscreen">${item.weight}</td>
+      <td class="bigsscreen">${item.sport}</td>
       <td>${item.team}</td>
-      <td>${item.noc}</td>
-      <td>${item.age}</td>
-      <td>${item.event}</td>
+      <td class="bigsscreen">${item.noc}</td>
+      <td class="bigsscreen">${item.age}</td>
+      <td class="bigsscreen">${item.event}</td>
       <td>${item.medal}</td>
     </tr>
   `;
