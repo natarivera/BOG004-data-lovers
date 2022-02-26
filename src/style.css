@@ -1,90 +1,325 @@
 body {
-    background-image: url("../Imagenes para DataLovers/background.png") !important; /*Se coloca */
-    background-size: 100%;
+  background-image: url("../Imagenes para DataLovers/background.png") !important; /*Se coloca */
+  background-size: 100%;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: medium;
 }
 
-header{
-    text-align: center;    /*Centra el texto 'Juegos olimpicos' de acuerdo a la caja contenedora header*/
-    border-style: solid;   
-    padding: 3%;
-    margin-top: 2%;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: none;  /*Para que no se vea tanto espacio entre cajones*/
+header {
+  text-align: center; /*Centra el texto 'Juegos olimpicos' de acuerdo a la caja contenedora header*/
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: none; /*Para que no se vea tanto espacio entre cajones*/
+  font-family: "Agency FB Bold", arial;
+  font-size: xx-large;
+  background-color: rgba(150, 150, 150, 0.6);
 }
 
+#headerrImg {
+  position: relative;
+  margin-top: -50px;
+  width: 250px;
+}
 
 .principal {
-    border: 2px solid;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 1%;
-    padding: 1%;
-    height: 500px;
-    box-sizing: content-box;
-    display: flex;
-    justify-content: flex-start;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 1%;
+  padding: 1%;
+  height: 450px;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
-
-
 
 .articles {
-    border: 2px solid;
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 
 .menu {
-    border: 2px solid;
-    width: 80%;
-    height: 150px;
-    text-align: center;
-    
+  width: 80%;
+  /*height: 150px;*/
+  text-align: center;
+  background-color: rgba(150, 150, 150, 0.6);
+  margin: 10px;
+  /*margin-right: 100px;*/
 }
 
-.pointer{
-    cursor:pointer;
+.pointer {
+  cursor: pointer;
 }
 
 .location {
-    border: 2px solid;
-    width: 80%;
-    height: 150px;
-    text-align: center;
+  width: 80%;
+  height: 250px;
+  text-align: center;
+  font-size: large;
+  background-color: rgba(150, 150, 150, 0.6);  
 }
 
 .information {
-    border: 2px solid;
-    width: 70%;
-
+  width: 70%;
+  background-color: rgba(150, 150, 150, 0.6);
+  text-align: left;
 }
 
 .atlethes {
-    display: none;
+  display: none;
+  width: 70%;
 }
 
-.participatingCountries{
-    display: none;
+.participatingCountries {
+  display: none;
 }
 
 .sports {
-    display: none;
+  display: none;
 }
 
-footer{
-    box-sizing: content-box;
-    text-align: center;
-    border: 2px solid;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 1%;;
+footer {
+  box-sizing: content-box;
+  text-align: center;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 1%;
+  padding: 4px;
+  background-color: rgba(150, 150, 150, 0.6);
+  font-size: larger;
+}
+
+#footerImg {
+  position: absolute;
+  bottom: 0;
+  width: 98%;
+  z-index: -1;
+}
+
+#brasilImg {
+  width: 120px;
+  height: auto;
+  float: left;
+  margin-left: 30px;
+}
+
+#rioImg {
+  width: 110px;
+  height: auto;
+  float: right;
+  margin-right: 30px;
+}
+
+#firstPage > p {
+  font-size: 22px;
+  padding: 30px;
+  text-align: justify;
+}
+
+.mascotaImg {
+  float: right;
+}
+
+html {
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+}
+
+table {
+  height: 400px;
+  overflow: scroll;
+  display: block;
+}
+
+thead th,
+tfoot th {
+  font-family: "Rock Salt", cursive;
+}
+
+th {
+  letter-spacing: 2px;
+}
+
+td {
+  letter-spacing: 1px;
+}
+
+tbody td {
+  text-align: center;
+}
+
+tfoot th {
+  text-align: right;
+}
+
+thead,
+tfoot {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+thead th,
+tfoot th,
+tfoot td {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.5)
+  );
+  border: 3px solid gray;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgb(194, 190, 190);
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgb(255, 255, 255);
+}
+
+table {
+  background-color: #b1b1b1;
+}
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 765px) {
+  #headerrImg {
+    display: none;
+  }
+
+  #footerImg {
+    display: none;
+  }
+
+  header {
+    margin: 0;
+  }
+
+  .location {
+    display: none;
+  }
+
+  .menu {
+    width: 100%;
+  }
+
+  .principal {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .articles {
+    width: 100%;
+  }
+
+  .atlethes {
+    width: 100%;
+  }
+
+  .information {
+    width: 100%;
+  }
+
+  .mascotaImg {
+    display: none;
+  }
+
+  #firstPage > p {
+    font-size: 12px;
+    padding: 10px;
+    text-align: justify;
+  }
+
+  td {
+    font-size: 10px;
+  }
+
+  footer {
+    display: none;
+  }
+  
+  .bigsscreen {
+    display: none;
+  }
+
+
+}
+
+
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 765px) and (max-width: 950px) {
+
+  #headerrImg {
+    /*display: none;*/
+  }
+
+  #footerImg {
+    /*display: none;*/
+  }  
+
+  .location {
+    display: none;
+  }
+
+  .menu {
+    width: 100%;
+    font-size: 30px;
+  }
+
+   table{
+     height: 740px;
+   }
+
+  .principal {
+    flex-direction: column;    
+    height: auto;
+  }
+
+  .articles {
+    width: 100%;
+  }
+
+  .atlethes {
+    width: 100%;
+    font-size: large;    
+  }
+
+  .atlethes select {
+    font-size: large;      
+  }
+
+  .information {
+    width: 100%;
+  }
+
+  .mascotaImg {
+    display: none;
+  }
+
+  #firstPage > p {
+    font-size: 25px;
+    padding: 40px;
+    text-align: justify;
+  }
+
+  td {
+    font-size: 20px;
+  }
+
+  footer {
+    /*display: none;*/
+  }
+  
+  .bigsscreen {
+    display: none;
+  }
+
 }
 
 
