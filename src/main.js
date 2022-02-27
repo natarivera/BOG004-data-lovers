@@ -1,6 +1,7 @@
+/* eslint-disable no-undef */
 //import { getCountry } from './data.js';
 
-import { getByCountry, getByGender,} from "./data.js";
+import { filterData, getByCountries } from "./data.js";
 import data from "./data/athletes/athletes.js";
 
 const athletesData = data.athletes;
@@ -42,8 +43,7 @@ function paintTable(data) {
 //Pintar países en el select
 
 function paintCountries(data) {
-  let dataTeam = data.map((ele) => ele.team);
-  let sortData = Array.from(new Set(dataTeam.sort()));
+  let sortData = getByCountries(data.athletes);
   let countriesSelectOption = `<option class="option-gender" value="_all">Países</option>`;
   for (const item of sortData) {
     countriesSelectOption += `
@@ -100,12 +100,4 @@ genderSelect.addEventListener("change", (e) => {
 //Inicializa la tabla si el usuario escoje la opción 'países' o la opción 'género' 
 //de lo contrario debe filtrar los datos de acuerdo a las especificaciones del usuario.
 
-function filterData(data, country, gender) {
-  if (country && country !== "_all") {
-    data = getByCountry(data, country);
-  }
-  if (gender && gender !== "_all") {
-    data = getByGender(data, gender);
-  }
-  return data
-}
+
