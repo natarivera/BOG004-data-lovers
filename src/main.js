@@ -43,7 +43,7 @@ function paintTable(data) {
 //Pintar países en el select
 
 function paintCountries(data) {
-  let sortData = getByCountries(data.athletes);
+  let sortData = getByCountries(data);
   let countriesSelectOption = `<option class="option-gender" value="_all">Países</option>`;
   for (const item of sortData) {
     countriesSelectOption += `
