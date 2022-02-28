@@ -24,13 +24,13 @@ function paintTable(data) {
     <tr>
       <td>${item.name}</td>
       <td>${item.gender}</td>
-      <td class="bigsscreen">${item.height}</td>
-      <td class="bigsscreen">${item.weight}</td>
-      <td class="bigsscreen">${item.sport}</td>
+      <td>${item.height}</td>
+      <td>${item.weight}</td>
+      <td>${item.sport}</td>
       <td>${item.team}</td>
-      <td class="bigsscreen">${item.noc}</td>
-      <td class="bigsscreen">${item.age}</td>
-      <td class="bigsscreen">${item.event}</td>
+      <td>${item.noc}</td>
+      <td>${item.age}</td>
+      <td>${item.event}</td>
       <td>${item.medal}</td>
     </tr>
   `;
@@ -42,7 +42,7 @@ function paintTable(data) {
 
 //Pintar países en el select, estamos sacando de el arreglo data un listado unico y ordenado de países
 
-function paintCountries(data) {i
+function paintCountries(data) {
   let sortData = getByCountries(data);
   let countriesSelectOption = `<option class="option-gender" value="_all">Países</option>`;
   for (const item of sortData) {
