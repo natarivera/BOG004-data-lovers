@@ -1,5 +1,5 @@
 body {
-  background-image: url('/Imagenes para DataLovers/background.jpg'); /*Se coloca */
+  background-image: url('./Imagenes para DataLovers/background.jpg'); /*Se coloca */
   background-size: 100%;
 }
 
