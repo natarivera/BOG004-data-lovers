@@ -23,13 +23,13 @@ function paintTable(data) {
     <tr>
       <td>${item.name}</td>
       <td>${item.gender}</td>
-      <td class="bigsscreen">${item.height}</td>
-      <td class="bigsscreen">${item.weight}</td>
-      <td class="bigsscreen">${item.sport}</td>
+      <td>${item.height}</td>
+      <td>${item.weight}</td>
+      <td>${item.sport}</td>
       <td>${item.team}</td>
-      <td class="bigsscreen">${item.noc}</td>
-      <td class="bigsscreen">${item.age}</td>
-      <td class="bigsscreen">${item.event}</td>
+      <td>${item.noc}</td>
+      <td>${item.age}</td>
+      <td>${item.event}</td>
       <td>${item.medal}</td>
     </tr>
   `;
@@ -83,7 +83,7 @@ athletesTableLink.addEventListener("click", () => {
 
 // Captura el país que el usuario escoje y muestra la tabla filtrada
 
-let selectedCountry = undefined;
+let selectedCountry;
 countriesSelect.addEventListener("change", (e) => {
   selectedCountry = e.target.value;
   paintTable(filterData(athletesData, selectedCountry, selectedGender));
@@ -91,7 +91,7 @@ countriesSelect.addEventListener("change", (e) => {
 });
 
 // Captura el género que el usuario escoje y muestra la tabla filtrada
-let selectedGender = undefined;
+let selectedGender;
 genderSelect.addEventListener("change", (e) => {
   selectedGender = e.target.value;
   paintTable(filterData(athletesData, selectedCountry, selectedGender));
