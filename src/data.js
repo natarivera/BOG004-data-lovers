@@ -31,7 +31,3 @@ export const getByCountries = (data) =>{
   return sortData;
 }
 
-
-
-
-
