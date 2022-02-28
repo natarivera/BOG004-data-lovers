@@ -19,30 +19,30 @@ const genderSelect = document.getElementById("selectGender");
 function paintTable(data) {
   let athletesInformation = ``;
 
-  for (const item of data) {
-    athletesInformation += `
+  for (const item of data) {//Recorriendo arreglo y agregando cada fila
+    athletesInformation += ` 
     <tr>
       <td>${item.name}</td>
       <td>${item.gender}</td>
-      <td>${item.height}</td>
-      <td>${item.weight}</td>
-      <td>${item.sport}</td>
+      <td class="bigsscreen">${item.height}</td>
+      <td class="bigsscreen">${item.weight}</td>
+      <td class="bigsscreen">${item.sport}</td>
       <td>${item.team}</td>
-      <td>${item.noc}</td>
-      <td>${item.age}</td>
-      <td>${item.event}</td>
+      <td class="bigsscreen">${item.noc}</td>
+      <td class="bigsscreen">${item.age}</td>
+      <td class="bigsscreen">${item.event}</td>
       <td>${item.medal}</td>
     </tr>
   `;
   }
 
-  firstTable.innerHTML = athletesInformation;
-  atletheCount.innerHTML = data.length;
+  firstTable.innerHTML = athletesInformation;//Agregando esa cadena al HTML
+  atletheCount.innerHTML = data.length; // Pantalla muestra cantidad de atletas
 }
 
-//Pintar países en el select
+//Pintar países en el select, estamos sacando de el arreglo data un listado unico y ordenado de países
 
-function paintCountries(data) {
+function paintCountries(data) {i
   let sortData = getByCountries(data);
   let countriesSelectOption = `<option class="option-gender" value="_all">Países</option>`;
   for (const item of sortData) {
@@ -57,8 +57,8 @@ function paintCountries(data) {
 //Pintar géneros en el select
 
 function paintGender(data) {
-  let dataGender = data.map((ele) => ele.gender);
-  let setDataGender = Array.from(new Set(dataGender));
+  let dataGender = data.map((ele) => ele.gender);//recorriendo el data busca el gender
+  let setDataGender = Array.from(new Set(dataGender));// Queda en valores unicos y no repetidos
   let gendersSelectOption = `<option class="option-gender" value="_all">Género</option>`;
 
   for (const item of setDataGender) {
@@ -84,8 +84,8 @@ athletesTableLink.addEventListener("click", () => {
 // Captura el país que el usuario escoje y muestra la tabla filtrada
 
 let selectedCountry;
-countriesSelect.addEventListener("change", (e) => {
-  selectedCountry = e.target.value;
+countriesSelect.addEventListener("change", (e) => { // En el evento change
+  selectedCountry = e.target.value;// Toma el valor que la persona selecciono
   paintTable(filterData(athletesData, selectedCountry, selectedGender));
 
 });
@@ -97,7 +97,7 @@ genderSelect.addEventListener("change", (e) => {
   paintTable(filterData(athletesData, selectedCountry, selectedGender));
 });
 
-//Inicializa la tabla si el usuario escoje la opción 'países' o la opción 'género' 
-//de lo contrario debe filtrar los datos de acuerdo a las especificaciones del usuario.
+
+
 
 
