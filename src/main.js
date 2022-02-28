@@ -15,6 +15,7 @@ const athletesTableDisplay = document.getElementById("secondPage");
 const atletheCount = document.getElementById("atletheCount");
 const countriesSelect = document.getElementById("selectCountries");
 const genderSelect = document.getElementById("selectGender");
+const oneview = document.getElementById("menuLink");
 
 function paintTable(data) {
   let athletesInformation = ``;
@@ -80,6 +81,15 @@ athletesTableLink.addEventListener("click", () => {
   informationDisplay.style.display = "none";
   athletesTableDisplay.style.display = "block";
 });
+
+oneview.addEventListener("click", () => {
+
+  athletesTableDisplay.style.display = "none";
+  informationDisplay.style.display = "block";
+  
+}
+
+)
 
 // Captura el país que el usuario escoje y muestra la tabla filtrada
 
