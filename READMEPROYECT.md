@@ -26,80 +26,38 @@ Los principales objetivos de los usuarios con el producto son:
   Este producto lo utilizarían cuando vuelvan a haber otros Juegos Olímpicos para comparar el rendimiento de los deportistas cada año, para motivar a los atletas a mejorar las marcas de estos Juegos Olímpicos, por cultura general (que país ganó mas medallas, que disciplinas participaron, cuantos atletas participaron), por ver que atletas nuevos hay, por diversión y curiosidad. 
 ## Historias de Usuario:
   
-  De acuerdo a nuestra investigación determinamos las siguientes historias de usuario:
-  ![historias de usuario](HU1.png)
+  De acuerdo a nuestra investigación determinamos las siguientes historias de usuario definidas en nuestro trello:
+  [Link a trello ](https://trello.com/b/ZULAlmGg/proyecto-data-lovers-nataly-escobar-camila-cort%C3%A9s)
+
 ## Criterios de aceptación:
-  * Historia de usuario 1: 
-      * El usuario puede acceder a las características de cada deportista (Peso, altura, país, deporte que practica) por medio de un ícono que al hacer click y ver toda la información en una tabla.
-      * Tener un filtro para que el usuario pueda ver los atletas que participaron por país.
-  * Historia de usuario 2:
-      * El usuario puede acceder a los países que participaron por medio de un ícono que al hacer click y ver toda la información en una tabla.
-      * Tener un filtro que permita al usuario clasificar los países por continente.
-  * Historia de usuario 3:
-      * El usuario puede acceder a la cantidad de atletas que participaron los Juegos Olímpicos de Río por medio de un ícono.
-      * Tener un filtro para saber cuantos atletas participaron por país y cuales fueron.
-  * Historia de usuario 4:
-      * El usuario puede acceder a los deportes principales que participaron los Juegos Olímpicos de Río por medio de un ícono.
-      * Cuando el usuario haga click en cada ícono que corresponderá a cada deporte que le interese, pueda ver las disciplinas por cada deporte.
-      * El usuario podrá acceder a cada disciplina y ver que atletas han ganado mas medallas.
-      * Que el usuario pueda dar click en un ícono que lo devuelva a la página donde se ven todos los deportes principales.
-  * Historia de usuario 5:
-      * El usuario puede escoger si quiere ver los equipos o atletas individuales por medio de un filtro.
-      * El usuario pueda ver la información de acuerdo a su preferencia.
-  * Historia de usuario 6:
-      * El usuario puede acceder a la cantidad de atletas que participaron en los Juegos Olimpicos de Río por medio de un ícono. 
-      * El usuario podrá escoger que género le gustaría ver y podrá acceder a una tabla para ver la cantidad de medallas que los deportistas han ganado de forma descendente. 
+Historia de usuario 1:
+* El usuario puede acceder a la tabla con la información de los deportistas (Peso, altura, país, deporte que practica) por medio de un link (atletas participantes).
+* El usuario puede ver a la cantidad de atletas que participaron en los Juegos Olímpicos de Río.
+Historia de usuario 2:
+* Que el usuario pueda acceder a un select con los países participantes en los JJOO.
+* Que el usuario al seleccionar una opción (país) refleje los atletas que participaron de ese país.
+Historia de usuario 3:
+* Que el usuario pueda acceder a un select con los géneros participantes en los JJOO.
+* Que el usuario al seleccionar una opción (género) refleje los atletas que participaron de ese género.
+Historia de usuario 4:
+* Que el usuario pueda acceder a unas tarjetas que contienen una imagen con los deportes por medio de un link (Deportes participantes)
+Historia de usuario 5:
+* Que el usuario al seleccionar una opción (deporte)  refleje las disciplinas que participaron en los JJOO. 
+Historia de usuario 6:
+* Que el usuario al seleccionar una disciplina deportiva refleje en una tabla los deportistas que ganaron medallas. 
 
-> Notamos que las historias de usuario 1, 3, 5 y 6 pueden combinarse para hacer un criterio de aceptación mas reducido.
-
-## Nuevos criterios de aceptación
-  * Historia de usuario 1, 3, 5,y 6: 
-    * El usuario puede acceder a las características de cada deportista (Peso, altura, país, deporte que practica) por medio de un ícono que al hacer pueda ver toda la información en una tabla.
-    * Encima de la tabla el usuario podrá ver cuantos deportistas participaron en los Juegos Olímpicos y a medida que los vaya aplicando los filtros, esta cantidad puede cambiar. 
-    * Tener un filtro para que el usuario pueda ver los atletas que participaron por país.
-    * El usuario puede escoger si quiere ver los equipos o atletas individuales por medio de un filtro.
-    * El usuario podrá escoger que género le gustaría ver
-    * El usuario podrá acceder a una tabla para ver la cantidad de medallas que los deportistas han ganado de forma descendente dependiendo de los filtros colocados por el usuario.
-  * Historia de usuario 2:
-      * El usuario puede acceder a los países que participaron por medio de un ícono que al hacer click y ver toda la información en una tabla.
-      * Tener un filtro que permita al usuario clasificar los países por continente.  
-  * Historia de usuario 4:
-      * El usuario puede acceder a los deportes principales que participaron los Juegos Olímpicos de Río por medio de un ícono.
-      * Cuando el usuario haga click en cada ícono que corresponderá a cada deporte que le interese, pueda ver las disciplinas por cada deporte.
-      * El usuario podrá acceder a cada disciplina y ver que atletas han ganado mas medallas.
-      * Que el usuario pueda dar click en un ícono que lo devuelva a la página donde se ven todos los deportes principales. 
 
 ## Definición de terminado
-  * Historia de usuario 1, 3, 5,y 6:
-    * Está la estructura HTML 
-    * Cumple con las guías de diseño aprobadas (CSS).
-    * El código está en el repositorio de ambas.
-    * Se realizaron los test para las funcionalidades.
-    * El código aprueba los test.
-    * Hemos trabajado juntas en el código y lo conocemos perfectamente.
-    * Ambas cumplimos con los objetivos de aprendizaje.
-    * Recibimos feedback de parte de los usuarios para saber en que debemos mejorar. 
-    * Mostrar funcionando la tarea.
-  * Historia de usuario 2:
-    * Está la estructura HTML 
-    * Cumple con las guías de diseño aprobadas (CSS).
-    * El código está en el repositorio de ambas.
-    * Se realizaron los test para las funcionalidades.
-    * El código aprueba los test.
-    * Hemos trabajado juntas en el código y lo conocemos perfectamente.
-    * Ambas cumplimos con los objetivos de aprendizaje.
-    * Recibimos feedback de parte de los usuarios para saber en que debemos mejorar. 
-    * Mostrar funcionando la tarea.
-  * Historia de usuario 4:
-    * Está la estructura HTML 
-    * Cumple con las guías de diseño aprobadas (CSS).
-    * El código está en el repositorio de ambas.
-    * Se realizaron los test para las funcionalidades.
-    * El código aprueba los test.
-    * Hemos trabajado juntas en el código y lo conocemos perfectamente.
-    * Ambas cumplimos con los objetivos de aprendizaje.
-    * Recibimos feedback de parte de los usuarios para saber en que debemos mejorar. 
-    * Mostrar funcionando la tarea.
+
+Se acordaron las mismas definiciones de terminado para todas las historias de usuarios, estas se mutrarán a continuación:
+* Está la estructura HTML
+* Cumple con las guías de diseño aprobadas (CSS).
+* Las funciones en el JS cumplen con su tarea.
+* Se ve reflejado en el DOM las funciones.
+* Se realizaron los testeos de usabilidad y recibimos feedback.
+* Las pruebas unitarias dan una cobertura del 70% de statements (sentencias), functions (funciones), lines (líneas), y branches (ramas).del archivo src/data.js y son aprobadas.
+* Se hizo pair programming.
+* El código esta en la rama main del repositorio de ambas.
 
 ## Proceso de diseño
 
@@ -114,12 +72,11 @@ A continuación se mostrarán los prototipos de las páginas que contendrán los
  * Información sobre atletas: 
  
   ![prototipo 2](PROTOTIPO1-2.png)  
-
- * Información sobre países participantes: 
- 
-  ![prototipo 2](PROTOTIPO1-3.png)  
  
  * Deportes participantes:
   
   ![prototipo 2](PROTOTIPO1-4.png) 
+
+A continuación se mostrará el prototipo de alta fidelidad realizado en Adobe XD.
+[Link al prototipo](https://xd.adobe.com/view/3386d29a-8aa3-470b-a1f6-ca8900976f9d-66d5/)
 
