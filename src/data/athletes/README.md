@@ -26,3 +26,4 @@ disciplinas, para nuestros usuarios es importante saber quiénes son y cuantas
 son las medallas que ganaron
 - Adicionalmente a nuestros usuarios les gustaría saber la cantidad de mujeres
 atletas que participaron y ganaron medallas.
+
