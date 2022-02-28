@@ -89,6 +89,21 @@ describe('filterData tests', () => {
     }
   );
 
+  test(
+    'Result is 8 when Colombia is chosen', // Que el resultado sea 8 cuando se escoge Colombia.
+    () => {
+      const resultado = filterData(data.athletes, 'Colombia');
+      expect(resultado.length).toBe(8);
+    }
+  );
+
+  test(
+    'Result is 4 when Colombia and Gender F is chosen', // Que el resultado sea 4 cuando se escoge Colombia y el género F
+    () => {
+      const resultado = filterData(data.athletes, 'Colombia', 'F');
+      expect(resultado.length).toBe(4);
+    }
+  );
 });
 
 
