@@ -1,80 +1,176 @@
 body {
   background-image: url("../Imagenes para DataLovers/background.jpg"); /*Se coloca */
   background-size: 100%;
-  font-family: "Segoe UI", Arial, sans-serif;
-  font-size: medium;
 }
 
 header {
+  width: 96%;
   text-align: center; /*Centra el texto 'Juegos olimpicos' de acuerdo a la caja contenedora header*/
-  margin-top: 2%;
+  margin-top: 1%;
   margin-left: 2%;
   margin-right: 2%;
-  margin-bottom: none; /*Para que no se vea tanto espacio entre cajones*/
   font-family: "Agency FB Bold", arial;
-  font-size: xx-large;
+  font-size: 40px;
   background-color: rgba(150, 150, 150, 0.6);
 }
 
-#headerrImg {
+h1 {
+  margin-top: 1%;
+}
+
+#headerrImg {            /*Se coloca el logotipo de los juego olimpicos*/
   position: relative;
-  margin-top: -50px;
-  width: 250px;
+  margin-top: -4%;     /*Separación entre el título de Juegos Olimpicos y el logotipo*/
+  width: 300px;
 }
 
 .principal {
+  margin-top: 1%;
+  margin-bottom: 1%;
   margin-left: 2%;
   margin-right: 2%;
-  margin-top: 1%;
-  padding: 1%;
-  height: 450px;
-  box-sizing: content-box;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  display: flex;      /*Colocamos los contenedores de manera horizontal*/
+  height: 400px;
 }
 
-ul {
-  list-style: none;
+.articles {    /*Estilo para la caja que contiene el menú y la localización*/
+  width: 15%;
+  min-width: 25%;
+  height: 400px;
+  display: flex;     /*Para mantener el tamaño de las cajas contenedoras dentro del main articles*/
+  flex-direction: column;   /*Coloca las cajas contenedoras una debajo de otra*/  
 }
 
-.articles {
-  width: 450px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.menu {
-  width: 80%;
-  /*height: 150px;*/
+.menu {    /*Estilo para el contenedor menú*/
+  width: 100%;
+  height: 150px;   
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  font-size: 20px;
   text-align: center;
+  margin: auto;
   background-color: rgba(150, 150, 150, 0.6);
-  margin: 10px;
-  /*margin-right: 100px;*/
 }
 
-.pointer {
+.divMenuLink {
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  font-size: 20px;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  padding: 1%;
+}
+
+.divMenuLink:hover { background-color: #204309; 
+  color: #EAD906;
+  padding: 1%;
+}
+
+ul {                 /*Para colocar los links de las páginas sin los puntos*/
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  font-size: 20px;
+  list-style: none;
+  padding: 0%;
+}
+
+.pointer {  /*Poner un pointer cada vez que pasa por los links*/
   cursor: pointer;
+  text-decoration: none;
+  padding: 1%;
 }
 
-.location {
-  width: 80%;
-  height: 250px;
+li:hover { 
+  background-color: #204309; 
+  padding: 1%;
+} 
+
+.pointer:hover {
+  color:#EAD906
+}
+
+.location {          /*Estilo para el contenedor de localización*/
+  width: 100%;
+  height: 260px;
+  margin-top: 4%;
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
   text-align: center;
-  font-size: large;
   background-color: rgba(150, 150, 150, 0.6);  
 }
 
+.contentFlagsImages {
+  justify-content: center;
+  display: flex;
+}
+
+.location P {
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  font-size: 20px;
+  margin: 4%;
+}
+
+#brasilImg {
+  width: 40%;
+  float: left;
+  margin: 2%;
+  padding-top: 2%;
+}
+  
+#rioImg {
+  width: 40%;
+  float: right;
+  margin: 2%;
+  padding-top: 2%;
+}
+
 .information {
-  width: 70%;
+  width: 75%;
+  box-sizing: border-box;
   background-color: rgba(150, 150, 150, 0.6);
-  text-align: left;
+  margin-left: 1%;
+  padding: 20px;
+  display: flex;
+}
+
+.olimpycsInformation {
+  width: 70%;
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  font-size: 18px;
+  margin-right: 2%;
+  float: left;
+  text-align: justify;
+}
+
+.mascotImg{
+  flex-direction: column;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  padding-right: 2%;
+  padding-top: 1%;
+  margin-left: 1%;
+  text-align: center;
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  font-size: 18px;
+}
+
+#petImg{
+  width: 200px;
+}
+
+select {
+  width: 20%;
+}
+
+.descriptionVinicius{
+  font-weight: bolder;
+  padding: 2%;
 }
 
 .atlethes {
-  display: none;
   width: 70%;
+  background-color: rgba(150, 150, 150, 0.6);
+  margin-left: 2%;
+  padding: 20px;
+  display: none;
 }
 
 .participatingCountries {
@@ -86,59 +182,31 @@ ul {
 }
 
 footer {
-  box-sizing: content-box;
+  width: 96%;
   text-align: center;
   margin-left: 2%;
   margin-right: 2%;
   margin-top: 1%;
-  padding: 4px;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
   background-color: rgba(150, 150, 150, 0.6);
-  font-size: larger;
-}
-
-#footerImg {
-  position: absolute;
-  bottom: 0;
-  width: 98%;
-  z-index: -1;
-}
-
-#brasilImg {
-  width: 120px;
-  height: auto;
-  float: left;
-  margin-left: 30px;
-}
-
-#rioImg {
-  width: 110px;
-  height: auto;
-  float: right;
-  margin-right: 30px;
-}
-
-#firstPage > p {
-  font-size: 22px;
-  padding: 30px;
-  text-align: justify;
-}
-
-.mascotaImg {
-  float: right;
-}
-
-html {
   font-family: "helvetica neue", helvetica, arial, sans-serif;
+  font-size: 20px;
 }
 
 table {
-  height: 400px;
+  width: 100%;
+  height: 80%;
   overflow: scroll;
   display: block;
 }
 
-thead th,
-tfoot th {
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+thead th{
   font-family: "Rock Salt", cursive;
 }
 
@@ -154,26 +222,11 @@ tbody td {
   text-align: center;
 }
 
-tfoot th {
-  text-align: right;
+
+thead{
+  color: rgb(0, 0, 0);
 }
 
-thead,
-tfoot {
-  color: white;
-  text-shadow: 1px 1px 1px black;
-}
-
-thead th,
-tfoot th,
-tfoot td {
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.1),
-    rgba(0, 0, 0, 0.5)
-  );
-  border: 3px solid gray;
-}
 
 tbody tr:nth-child(odd) {
   background-color: rgb(194, 190, 190);
@@ -187,8 +240,326 @@ table {
   background-color: #b1b1b1;
 }
 
+
+/*Diseño responsive para cualquier teléfono movil vista landscape*/
+
+@media screen and (max-width: 800px) {
+
+  header {
+    font-size: 20px;
+  }
+
+  #headerrImg {
+    width: 150px;
+  }
+
+  .principal {
+    flex-direction: column;
+  }
+
+  .articles{
+    width: 100%;
+    height: 75px;
+    display: flex;     /*Para mantener el tamaño de las cajas contenedoras dentro del main articles*/
+    flex-direction: row;
+    margin-bottom: 1%;
+  }
+
+  .menu {    /*Estilo para el contenedor menú*/
+    width: 50%;
+    height: 75px;   
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+    text-align: center;
+    margin-right: 1%;
+    margin: none;
+  }
+
+  .divMenuLink {
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+    font-size: 14px;
+    margin: 0%;
+  }
+
+  ul {                 /*Para colocar los links de las páginas sin los puntos*/
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+    font-size: 14px;
+  }
+
+  .location {          /*Estilo para el contenedor de localización*/
+    width: 50%;
+    height: 75px;
+    margin-top: 0%;
+    display: flex;
+    text-align: center;
+  }
+
+  .location P {
+    text-align: center;
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+    font-size: 14px;
+    padding: 0.5%;
+  }
+
+  .infoCountry {
+    width: 100%;
+  }
+
+  .contentFlagsImages {
+    display: none;
+  }
+
+  .information {
+    width:100%;
+    height: 315px;
+    margin: 0%;
+    padding: 1%;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .olimpycsInformation {
+    width: 90%;
+    height: 200px;
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+    font-size: 72%;
+    text-align: justify;
+  }
+
+  .mascotImg{
+    width: 40%;
+    flex-direction: column;
+    text-align: center;
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+    font-size: 10px;
+  }
+
+  #petImg{
+    width: 60px;
+  }
+
+  select{
+    width: 30%;
+  }
+  
+  .descriptionVinicius{
+    font-weight: bolder;
+    padding: 2%;
+  }
+
+  .atlethes{
+    width: 93%;
+    margin: 0%;
+  }
+
+  footer {
+    display: none;
+  }
+
+  table {
+    width: 100%;
+    height: 300px;
+    overflow: scroll;
+    display: block;
+  }
+  
+  thead th{
+    color: rgb(0, 0, 0);
+    font-family: "Rock Salt", cursive;
+    font-size: 10px;
+  }
+  
+  th {
+    letter-spacing: 1px;
+  }
+  
+  td {
+    letter-spacing: 1px;
+  }
+  
+  tbody td {
+    text-align: center;
+    font-size: 10px;
+  }
+
+  
+  tbody tr:nth-child(odd) {
+    background-color: rgb(194, 190, 190);
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  table {
+    background-color: #b1b1b1;
+  }
+
+}
+
+/*Diseño responsive para cualquier teléfono movil vista Portrait*/
+
+@media screen and (max-width: 600px) {
+
+  br {
+    display: none;
+  }
+
+  header {
+    font-size: 20px;
+  }
+
+  #headerrImg {
+    width: 150px;
+  }
+
+  .principal {
+    flex-direction: column;
+  }
+
+  .articles{
+    width: 100%;
+    height: 75px;
+    display: flex;     /*Para mantener el tamaño de las cajas contenedoras dentro del main articles*/
+    flex-direction: row;
+    margin-bottom: 1%;
+  }
+
+  .menu {    /*Estilo para el contenedor menú*/
+    width: 50%;
+    height: 75px;   
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+    text-align: center;
+    margin-right: 1%;
+    margin: none;
+  }
+
+  .divMenuLink {
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+    font-size: 14px;
+  }
+
+  ul {                 /*Para colocar los links de las páginas sin los puntos*/
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+    font-size: 14px;
+    padding: 0%;
+  }
+
+  .location {          /*Estilo para el contenedor de localización*/
+    width: 50%;
+    height: 75px;
+    margin-top: 0%;
+    display: flex;
+    text-align: center;
+  }
+
+  .location P {
+    text-align: center;
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+    font-size: 12px;
+    padding: 3%;
+  }
+
+  .infoCountry {
+    width: 100%;
+  }
+
+  .contentFlagsImages {
+    display: none;
+  }
+
+  .information {
+    width:100%;
+    height: 400px;
+    margin: 0%;
+    padding: 1%;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .olimpycsInformation {
+    width: 80%;
+    height: 390px;
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+    font-size: 70%;
+    text-align: justify;
+  }
+
+  .mascotImg{
+    width: 40%;
+    flex-direction: column;;
+    text-align: center;
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+    font-size: 10px;
+  }
+
+  #petImg{
+    width: 70px;
+  }
+
+  select{
+    width: 30%;
+  }
+  
+  .descriptionVinicius{
+    font-weight: bolder;
+    padding: 2%;
+  }
+
+  .atlethes{
+    width: 87%;
+  }
+
+  footer {
+    display: none;
+  }
+
+  table {
+    width: 100%;
+    height: 300px;
+    overflow: scroll;
+    display: block;
+  }
+  
+  thead th{
+    color: rgb(0, 0, 0);
+    font-family: "Rock Salt", cursive;
+    font-size: 10px;
+  }
+  
+  th {
+    letter-spacing: 1px;
+  }
+  
+  td {
+    letter-spacing: 1px;
+  }
+  
+  tbody td {
+    text-align: center;
+    font-size: 10px;
+  }
+
+  
+  tbody tr:nth-child(odd) {
+    background-color: rgb(194, 190, 190);
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  table {
+    background-color: #b1b1b1;
+  }
+
+
+}
+
+
+
+
 /* For extremely small screen devices (595px and below) */
-@media only screen and (max-width: 765px) {
+/*@media only screen and (max-width: 765px) {
   #headerrImg {
     display: none;
   }
@@ -253,15 +624,15 @@ table {
 
 
 /* Medium screen devices (768px and above) */
-@media only screen and (min-width: 765px) and (max-width: 950px) {
+/*@media only screen and (min-width: 765px) and (max-width: 950px) {
 
   #headerrImg {
     /*display: none;*/
-  }
+  /*}
 
   #footerImg {
     /*display: none;*/
-  }  
+  /*}  
 
   .location {
     display: none;
@@ -314,13 +685,14 @@ table {
 
   footer {
     /*display: none;*/
-  }
+  /*}
   
   .bigsscreen {
     display: none;
   }
 
 }
+
 
 
 
